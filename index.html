@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>A simple loan calculation app</h1>
+    </header>
+    <section class="main-wrapper">
+        <div class="loan-col">
+            <select id="all-options" onchange="getOnChange()">
+                <option value="1" selected>100000</option>
+                <option value="2">150000</option>
+                <option value="3">200000</option>
+                <option value="4">300000</option>
+                <option value="5">400000</option>
+                <option value="6">500000</option>
+                <option value="7">600000</option>
+                <option value="8">700000</option>
+                <option value="9">800000</option>
+                <option value="10">900000</option>
+                <option value="11">1000000</option>
+            </select>
+            <div class="loan-item percentages" id="interest-col">
+                <div onclick="fifteenPercentInt()" class="active interest">
+                    <span id="fifteen-percent">15</span><span>%</span>
+                </div>
+                <div onclick="tenPercentInt()" class="interest">
+                    <span id="ten-percent">10<span>%</span></span>
+                </div>
+                <div onclick="fivePercentInt()" class="interest">
+                    <span id="five-percent">5<span>%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="result-wrapper">
+        <div id="results"></div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
