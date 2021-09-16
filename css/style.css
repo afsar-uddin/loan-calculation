@@ -76,4 +76,10 @@ tr th, tr td {
     tr th, tr td {
         font-size: 16px;
     }    
+    .loan-col div {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 22px;
+    }
 }
