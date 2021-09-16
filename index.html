@@ -16,19 +16,22 @@
     </header>
     <section class="main-wrapper">
         <div class="loan-col">
-            <select id="all-options" onchange="getOnChange()">
-                <option value="1" selected>100000</option>
-                <option value="2">150000</option>
-                <option value="3">200000</option>
-                <option value="4">300000</option>
-                <option value="5">400000</option>
-                <option value="6">500000</option>
-                <option value="7">600000</option>
-                <option value="8">700000</option>
-                <option value="9">800000</option>
-                <option value="10">900000</option>
-                <option value="11">1000000</option>
-            </select>
+            <div>
+                <span>$</span>
+                <select id="all-options" onchange="getOnChange()">
+                    <option value="1" selected>100000</option>
+                    <option value="2">150000</option>
+                    <option value="3">200000</option>
+                    <option value="4">300000</option>
+                    <option value="5">400000</option>
+                    <option value="6">500000</option>
+                    <option value="7">600000</option>
+                    <option value="8">700000</option>
+                    <option value="9">800000</option>
+                    <option value="10">900000</option>
+                    <option value="11">1000000</option>
+                </select>
+            </div>
             <div class="loan-item percentages" id="interest-col">
                 <div onclick="fifteenPercentInt()" class="active interest">
                     <span id="fifteen-percent">15</span><span>%</span>

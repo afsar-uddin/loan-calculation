@@ -19,8 +19,7 @@ header {
     align-items: center;
     justify-content: center;
 }
-.loan-col div, 
-.loan-col select {
+.loan-col div {
     border: 1px solid #ddd;
     padding: 10px 30px;
     text-align: center;
@@ -56,6 +55,12 @@ tr th, tr td {
 }
 .interest.active {
     background-color: #f9f9f9;
+}
+.loan-col select,
+.loan-col select:focus,
+.loan-col select:focus-visible {
+    border: none;
+    outline: 0;
 }
 @media screen and (max-width: 640px) {
     .total-result {
