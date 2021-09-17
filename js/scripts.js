@@ -1,17 +1,18 @@
-// inner text 
+// target inner text 
 const innerText = id => {
     const elm = document.getElementById(id).innerText;
     const elmVal = parseFloat(elm);
     return elmVal;
 }
-// select option
 
+// select option onchange data clear
 function getOnChange() {
     const allOptions = document.getElementById('all-options')
-    // let loanAmount = parseFloat(allOptions.options[allOptions.selectedIndex].text);
     const results = document.getElementById('results');
     results.textContent = '';
 }
+
+// fifteen percent interest function
 function fifteenPercentInt() {
     const allOptions = document.getElementById('all-options')
     let loanAmount = parseFloat(allOptions.options[allOptions.selectedIndex].text);
@@ -48,6 +49,7 @@ function fifteenPercentInt() {
     
     `;
 }
+// ten percent interest function
 function tenPercentInt() {
     const allOptions = document.getElementById('all-options')
     let loanAmount = parseFloat(allOptions.options[allOptions.selectedIndex].text);
@@ -84,6 +86,7 @@ function tenPercentInt() {
     
     `;
 }
+// five percent interest function
 function fivePercentInt() {
     const allOptions = document.getElementById('all-options')
     let loanAmount = parseFloat(allOptions.options[allOptions.selectedIndex].text);
@@ -128,7 +131,6 @@ function interestActive(targetArea) {
 
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener('click', function () {
-            // console.log(btns[i])
             let current = targetedCol.getElementsByClassName('active');
             current[0].className = current[0].className.replace('active', "");
             this.className += ' active '
